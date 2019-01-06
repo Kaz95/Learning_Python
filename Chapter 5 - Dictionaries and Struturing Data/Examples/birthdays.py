@@ -14,7 +14,7 @@ def main():
             print('I do not have birthday information for ' + name)
             print('What is their birthday?')
             b_day = input()
-            birthdays[name] = b_day
+            birthdays[name] = b_day  # Sets given name as new key and assigns given date as value.
             print('Birthday database updated')
 
 

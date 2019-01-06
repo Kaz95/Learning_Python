@@ -1,0 +1,17 @@
+Dictionary Methods
+
+- .keys()
+    - Returns list-like value of a given dictionary's keys.
+- .values()
+    - Returns a list-like value of a given dictionary's values.
+- .items()
+    - Returns a list-like value of a given dictionary's key:value pairs as tuples.
+- .get(key, default value)
+    - Checks if a given key is in a given dictionary. Returns Value if is in.
+    - Returns default value if not in.
+    - Useful to avoid KeyError while referencing something not in a list, that you don't want in the dictionary.
+    - Use .setdefault if you want it in dictionary
+- .setdefault(Key, Value)
+    - Checks if given key is in dictionary. If not in, assigns given value to given key.
+    - If in, returns given keys value
+    - See pretty_character_count.py for example.
