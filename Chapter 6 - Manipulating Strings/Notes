@@ -31,7 +31,9 @@
             - Returns true if string value called on ends with string passed to method
             - Ex: .com, end of a give file directory, ect
 
-        -
+        - 'Some string'.join([Some_list])
+            - Joins a list of strings using the string value called on the method.
+            -
 
     - "" allows use of apostrophe  inside string value
     - Use \ if you need single('') and double quotes(""
