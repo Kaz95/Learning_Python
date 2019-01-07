@@ -1,5 +1,29 @@
 - String Notes
-    - "" allows use of comma inside string value
+    - String Methods
+        - .upper()
+
+        - .lower()
+
+        - .isupper()
+
+        - .islower()
+
+        - .isalpha()
+            - Only letters (and not blank)
+
+        - .isalnum()
+            - Only letters OR numbers
+
+        - .isdecimal
+            - Only numbers
+
+        - .isspace
+            - Spaces tabs and new lines(Still not blank!!!)
+
+        - .istitle
+            Capital letter followed by lowercase.
+
+    - "" allows use of apostrophe  inside string value
     - Use \ if you need single('') and double quotes(""
     - Escape Characters
         - \t
@@ -8,3 +32,8 @@
             - Start new line
         - \\
             - Backslash
+    - print(r'string')
+        - raw string
+    - '' x3 for multi-line strings.
+    - Index strings same as lists
+    - In and not in work with strings
