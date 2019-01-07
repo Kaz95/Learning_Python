@@ -21,7 +21,17 @@
             - Spaces tabs and new lines(Still not blank!!!)
 
         - .istitle
-            Capital letter followed by lowercase.
+            - Capital letter followed by lowercase.
+
+        - .startswith('passed string')
+            - Returns True if string value called on begins with string passed to method.
+            - Ex: http, C:\, ect
+
+        - .endswith('passed string')
+            - Returns true if string value called on ends with string passed to method
+            - Ex: .com, end of a give file directory, ect
+
+        -
 
     - "" allows use of apostrophe  inside string value
     - Use \ if you need single('') and double quotes(""
