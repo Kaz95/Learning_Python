@@ -1,0 +1,10 @@
+- String Notes
+    - "" allows use of comma inside string value
+    - Use \ if you need single('') and double quotes(""
+    - Escape Characters
+        - \t
+            - Tab
+        - \n
+            - Start new line
+        - \\
+            - Backslash
