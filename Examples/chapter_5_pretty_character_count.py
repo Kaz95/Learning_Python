@@ -1,6 +1,8 @@
 # Program that iterates over the given string value and prints the number of occurrences of each character in the string
 # Capital characters count separate from lower case.
 
+#! python3
+
 import pprint   # Formats dictionary output
 
 message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
