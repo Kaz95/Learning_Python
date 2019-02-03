@@ -17,6 +17,13 @@ def isPhoneNumber(text):
     return True
 
 
+def check_for_numbers(text):
+    for i in range(len(text)):
+        chunk = text[i:i+12]
+        if isPhoneNumber(chunk):
+            print('Phone number found: ' + chunk)
+    print('Done')
+
 if __name__ == '__main__':
     a = '413-436-6654'
     b = 'yol-osw-ag12'
