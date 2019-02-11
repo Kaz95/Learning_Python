@@ -20,14 +20,15 @@ def isPhoneNumber(text):
 def check_for_numbers(text):
     for i in range(len(text)):
         chunk = text[i:i+12]
+        # print(chunk)
         if isPhoneNumber(chunk):
             print('Phone number found: ' + chunk)
     print('Done')
+
 
 if __name__ == '__main__':
     a = '413-436-6654'
     b = 'yol-osw-ag12'
     c = '123456789123'
-    print(isPhoneNumber(a))
-    print(isPhoneNumber(b))
-    print(isPhoneNumber(c))
+    d = 'Call me at 415-555-1011 tomorrow. 415-555-9999 is my office.'
+    check_for_numbers(d)
