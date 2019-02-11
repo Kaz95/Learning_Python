@@ -5,7 +5,8 @@ from tkinter import ttk
 def login_page():
     big_label = ttk.Style()
     big_label.configure('big.TLabel', font=('Times', 25))
-    login_label = ttk.Label(text='Log-In', width='48', style='big.TLabel', anchor='center').grid(column=0, row=0, sticky=W+E)
+    login_label = ttk.Label(text='Log-In', width='48', style='big.TLabel', anchor='center').grid(column=0, row=0,
+                                                                                                 sticky=W+E)
     username_label = ttk.Label(text='Username').grid(column=0, row=1)
     username_entry = ttk.Entry().grid(column=0, row=2)
     password_label = ttk.Label(text='Password').grid(column=0, row=3)
@@ -27,6 +28,19 @@ def signup_page():
     login_button = ttk.Button(text='Login-in', command=login_page).grid(column=0, row=6)
 
 
+def char_select():
+    big_label = ttk.Style()
+    big_label.configure('big.TLabel', font=('Times', 25))
+    title_label = ttk.Label(text='Character Selection', width='48', style='big.TLabel', anchor='center').grid(column=0,
+                                                                                                              row=0,
+                                                                                                              sticky=W+E)
+    characters_label = ttk.Label(text='Characters').grid(column=0, row=1)
+    chars_combo = ttk.Combobox(values=['1', '2', '3']).grid(column=0, row=2)
+    select_button = ttk.Button(text='Select').grid(column=0, row=3)
+
+
+
 root = Tk()
-login_page()
+# login_page()
+char_select()
 root.mainloop()
