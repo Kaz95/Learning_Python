@@ -1,8 +1,8 @@
 import unittest
 from unittest.mock import patch
 from testing.database import create_connection, execute_fetchall_sql, execute_fetchone_sql
-from testing.database import sql_username_password, sql_account_row, sql_accounts_with_characters, sql_all_characters
-from testing.database import sql_all_inventories, sql_character_row, sql_characters_with_inventories, sql_inventory_row
+from testing.sql import sql_username_password, sql_account_row, sql_accounts_with_characters, sql_all_characters
+from testing.sql import sql_all_inventories, sql_character_row, sql_characters_with_inventories, sql_inventory_row
 from testing.database import add_account_row, add_inventory_row, add_item_row, add_character_row, add_store_item
 
 
