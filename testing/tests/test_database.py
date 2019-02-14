@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch123
 from testing.database import create_connection
 from testing.database import add_account_row, add_inventory_row, add_item_row, add_character_row, add_store_item
 
