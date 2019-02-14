@@ -60,7 +60,13 @@ def wrong_item_count():
 # Modular sqlite execute function which is passed a connection and some sql
 def execute_sql(con, sql_statement, *args):
     cur = con.cursor()
+    print(args)
     cur.execute(sql_statement, args)
+
+
+# def execute_sql_2(con, sql_statement, var=None):
+#     cur = con.cursor()
+#     cur.execute(sql_statement, var)
 
 
 def execute_fetchone_sql(con, sql_statement, *args):
@@ -69,10 +75,30 @@ def execute_fetchone_sql(con, sql_statement, *args):
     return cur.fetchone()
 
 
+# def execute_fetchone_sql_2(con, sql_statement, var=None):
+#     cur = con.cursor()
+#     if var is not None:
+#         cur.execute(sql_statement, var)
+#     else:
+#         cur.execute(sql_statement)
+#
+#     return cur.fetchone()
+
+
 def execute_fetchall_sql(con, sql_statement, *args):
     cur = con.cursor()
     cur.execute(sql_statement, args)
     return cur.fetchall()
+
+
+# def execute_fetchall_sql_2(con, sql_statement, var=None):
+#     cur = con.cursor()
+#     if var is not None:
+#         cur.execute(sql_statement, var)
+#     else:
+#         cur.execute(sql_statement)
+#
+#     return cur.fetchall()
 
 
 # TODO consider refactoring to a single .executemany()
@@ -259,16 +285,17 @@ if __name__ == '__main__':
     con = create_connection(db)
     with con:
         print(add_account_row(con, acc))
-        # add_inventory_row(con, inv)
-        # add_character_row(con, char)
-        # add_item_row(con, item)
+        add_inventory_row(con, inv)
+        add_character_row(con, char)
+        add_item_row(con, item)
 
-        # print(query_username_password(con))
-        # print(query_account_row(con, 'Kazact'))
-        # print(query_character_row(con, 'char name'))
-        # print(query_inventory_row(con, 'Kazact'))
-        # print(query_all_characters(con, 1))
-        # print(query_accounts_with_characters(con))
-        # print(query_characters_with_inventories(con))
-        # print(query_all_inventories(con, 1))
-        # print(count_rows(con, 'items'))
+        print(query_username_password(con))
+        print(query_account_row(con, 'Kazact'))
+        print(query_character_row(con, 'char name'))
+        print(query_inventory_row(con, 'Kazact'))
+        print(query_all_characters(con, '1'))
+        print(query_accounts_with_characters(con))
+        print(query_characters_with_inventories(con))
+        print(query_all_inventories(con, 1))
+        print(count_rows(con, 'items'))
+    # # stock_stores()
