@@ -68,5 +68,6 @@ class TestApi(unittest.TestCase):
         self.assertEqual(regex(feat, 'features/'), '312')
         self.assertEqual(regex(classes, 'classes/'), '5')
 
+
 if __name__ == '__main__':
     unittest.main()

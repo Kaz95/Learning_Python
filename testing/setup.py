@@ -8,6 +8,7 @@ db = 'C:\\sqlite\\db\\test.db'
 mem = ':memory:'
 
 
+# TODO integration test
 # TODO consider refactoring to a single .executemany()
 # Four sqlite statements which create the database schema.
 def create_schema():
@@ -46,6 +47,7 @@ def create_schema():
         testing.sql.execute_sql(con, testing.sql.sql_items_table())
 
 
+# TODO mock fetchall and unit test
 # Verifies database setup correctly
 def wrong_schema():
     schema = ['accounts', 'characters', 'inventories', 'items']
@@ -64,8 +66,8 @@ def wrong_schema():
             return True
 
 
+# TODO integration test
 # TODO comment this shit.
-# TODO refactor to use new api methods
 def stock_stores():
     store_dict = testing.stores.stores()
     conn = testing.database.create_connection(db)
